@@ -37,7 +37,7 @@ function Banner() {
         </h1>
 
         <div className="banner_buttons" >
-            <button className="banner_button"> Play </button>
+            <button className="banner_button1"> Play </button>
             <button className="banner_button"> My List</button>
         </div>
 
@@ -45,6 +45,8 @@ function Banner() {
         {truncate(movie?.overview , 150)}
     </h1>
       </div>
+
+      <div className="banner_fadebottom"/>
     </header>
   );
 }
