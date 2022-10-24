@@ -21,6 +21,9 @@ function Banner() {
   }, []);
 
   console.log(movie);
+  function truncate(str , n){
+      return str?.length > n ? str.substr(0, n-1) + " ..." :str;
+  }
   return (
     <header className="banner" 
     style={{
@@ -39,7 +42,7 @@ function Banner() {
         </div>
 
     <h1 className="banner_description" >
-        {movie?.overview}
+        {truncate(movie?.overview , 150)}
     </h1>
       </div>
     </header>
