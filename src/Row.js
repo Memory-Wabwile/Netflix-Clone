@@ -13,7 +13,7 @@ function Row({ title, fetchUrl ,isLargeRow }) {
     // if [] , run once when the row loads and dont run again
     async function fetchData() {
       const request = await axios.get(fetchUrl);
-      console.log(request);
+      // console.log(request);
       setMovies(request.data.results);
       return request;
     }
