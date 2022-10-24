@@ -21,9 +21,20 @@ function Banner() {
 
   console.log(movie);
   return (
-    <header className="banner" >
+    <header className="banner" 
+    style={{
+        backgroundSize:"cover",
+        backgroundPosition:"center center",
+        backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
+    }} >
       <div className="banner_contents">
-
+        <h1>
+            {movie?.title || movie?.name || movie?.original_name}
+        </h1>
+        <div className="banner_buttons" >
+            <button className="banner_button"></button>
+            <button className="banner_button"></button>
+        </div>
       </div>
     </header>
   );
