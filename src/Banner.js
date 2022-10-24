@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "./axios";
 import requests from "./request";
+import "./Banner.css";
 
 function Banner() {
   const [movie, setMovies] = useState([]);
@@ -28,7 +29,7 @@ function Banner() {
         backgroundImage:`url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
     }} >
       <div className="banner_contents">
-        <h1>
+        <h1 className="banner_title" >
             {movie?.title || movie?.name || movie?.original_name}
         </h1>
 
