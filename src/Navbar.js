@@ -11,20 +11,20 @@ function Navbar() {
             }else handleShow(false);
         });
         return() => {
-            window.removeEventListener("scrollY");
+            // window.removeEventListener("scroll");
         };
     } , []);
 
 
   return (
-    <div className={`Nav ${show && "nav_black"}`} >
-        <img className='Nav_logo' 
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0f/"
+    <div className={`nav ${show && "nav_black"}`} >
+        <img className='nav_logo' 
+        src = "https://o.remove.bg/downloads/8ed35ce7-8985-4ab2-89c9-f26b2acc5ded/Netflix-logo-red-black-png-removebg-preview.png"
         alt='Netflix Logo' />
 
         <img
         className='nav_avatar' 
-        src='https://pbs.twimg.com/profile_images/12401199904115'
+        src='https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png'
         alt='Netflix_logo'/>
     </div>
   )
