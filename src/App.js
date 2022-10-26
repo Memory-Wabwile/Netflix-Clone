@@ -8,7 +8,7 @@ import Banner from './Banner'
 function App() {
   return (
     <div className="app">
-      
+      <Navbar/>
       <Banner />
 
      < Row title=" NETFLIX ORIGINALS " fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
