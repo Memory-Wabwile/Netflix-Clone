@@ -14,7 +14,7 @@ const Auth = () => {
                 <h1>Unlimited movies , TV shows and more</h1>
                 <p> Watch anywhere , Cancel anytime</p>
 
-                <Link to="/App"> Watch free for 30 days</Link>
+                <Link to="/home"> Watch free for 30 days</Link>
             </div>
         </div>
     </header>
