@@ -3,6 +3,8 @@ import requests from './request';
 import Row from './Row';
 import Banner from './Banner';
 import Navbar from './Navbar';
+import Footer from './Footer';
+import "./Home.css"
 
 
 function Home() {
@@ -20,6 +22,7 @@ function Home() {
    < Row title=" Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
    < Row title=" Documentaries " fetchUrl={requests.fetchDocumentaries} />
   
+  <Footer/>
 
   </div>
   )

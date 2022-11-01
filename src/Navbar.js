@@ -19,7 +19,7 @@ function Navbar() {
   return (
     <div className={`nav ${show && "nav_black"}`} >
         <img className='nav_logo' 
-        src = "https://o.remove.bg/downloads/8ed35ce7-8985-4ab2-89c9-f26b2acc5ded/Netflix-logo-red-black-png-removebg-preview.png"
+        src = "netflix-logo.png"
         alt='Netflix Logo' />
 
         <img
