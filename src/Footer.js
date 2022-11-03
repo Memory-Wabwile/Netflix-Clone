@@ -3,9 +3,9 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <div>
+    <div className='container' >
         <footer className='footer' >
-            <p>Question ? Call 0117-890-234</p>
+        
 
             <div className='footer-cols' >
                 <ul>

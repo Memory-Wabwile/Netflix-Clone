@@ -35,6 +35,7 @@ function Row({ title, fetchUrl ,isLargeRow }) {
 
         ))}
       </div>
+      
     </div>
   );
 }
