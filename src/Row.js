@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
+import YouTube from "react-youtube";
 import axios from "./axios";
-import './Row.css'
+import './Row.css';
+
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, fetchUrl ,isLargeRow }) {
   const [movies, setMovies] = useState([]);
+  const [trailerUrl , setTrailerUrl] = useState("");
 
   // code which runs based on specific conditions
 
@@ -19,6 +22,15 @@ function Row({ title, fetchUrl ,isLargeRow }) {
     }
     fetchData();
   }, [fetchUrl]);
+
+  const opts = {
+    height : "390",
+    width :"100%",
+    playerVars :{
+      //https://developers.google.com/youtube/player_parameters
+      autoplay : 1
+    }
+  }
 
   return (
     <div className="row">
@@ -35,7 +47,7 @@ function Row({ title, fetchUrl ,isLargeRow }) {
 
         ))}
       </div>
-      
+      <YouTube videoId={trailerUrl} opts={opts} />
     </div>
   );
 }
