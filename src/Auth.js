@@ -14,10 +14,10 @@ const Auth = () => {
             </Link> */}
 
             <div className='showcase-content' >
-                <h1>Unlimited movies , TV shows and more</h1>
-                <p> Watch anywhere , Cancel anytime</p>
+                <h1>Watch your favourite Movie Trailer</h1>
+                <p> Click on the mvie to watch trailer</p>
 
-                <Link to="/home" className='btn btn-xl' > Watch free for 30 days </Link>
+                <Link to="/home" className='btn btn-xl' > Click Here</Link>
             </div>
             <Footer/>
         </div>

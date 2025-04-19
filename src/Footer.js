@@ -19,7 +19,7 @@ function Footer() {
                         <a href='#'>Corporate Information</a>
                     </li>
                     <li>
-                        <a href='#'>Netflix Originals</a>
+                        <a href='#'>Movies Originals</a>
                     </li>
                 </ul>
 
