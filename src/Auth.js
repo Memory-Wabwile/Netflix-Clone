@@ -15,7 +15,7 @@ const Auth = () => {
 
             <div className='showcase-content' >
                 <h1>Watch your favourite Movie Trailer</h1>
-                <p> Click on the mvie to watch trailer</p>
+                <p> Click on the movie to watch the trailer</p>
 
                 <Link to="/home" className='btn btn-xl' > Click Here</Link>
             </div>

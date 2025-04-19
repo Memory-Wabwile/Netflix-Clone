@@ -13,7 +13,7 @@ function Home() {
     <Navbar/>
     <Banner />
 
-   < Row title=" NETFLIX ORIGINALS " fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
+   < Row title=" MOVIES ORIGINALS " fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
    < Row title=" Trending Now " fetchUrl={requests.fetchTrending} />
    < Row title=" Top Rated " fetchUrl={requests.fetchTopRated} />
    < Row title="Action Movies " fetchUrl={requests.fetchActionMovies} />

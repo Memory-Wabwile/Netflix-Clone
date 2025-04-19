@@ -31,3 +31,31 @@
     right: 20px;
     top: 1;
 }
+
+@media (max-width: 768px) {
+    .nav {
+        padding: 10px;
+        height: auto; 
+        flex-direction: row; 
+        align-items: center; 
+      }
+    
+      .nav_logo {
+        width: auto; 
+        max-width: 80px;
+        position: static;
+        left: auto; 
+        top: auto; 
+        margin-right: auto; 
+      }
+    
+      .nav_avatar {
+        width: 30px; 
+        position: static; 
+        right: auto; 
+        top: auto; 
+        margin-left: 10px; 
+        padding-right: 15px; 
+
+      }
+  }
